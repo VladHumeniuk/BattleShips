@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BattleShips</string>
+
+    <!-- Main Screen -->
+    <string name="new_game_label">New Game</string>
+
+    <!-- Preparation Screen -->
+    <string name="ships_label">Your ships</string>
+    <string name="ship_count">size: %d available: %d</string>
+    <string name="ready_label">Ready!</string>
+
+    <!-- Battle Screen -->
+    <string name="opponents_ships_label">Opponents ships</string>
+    <string name="ship_count_left">size: %d\r\n left: %d</string>
+    <string name="end_turn_label">End Turn!</string>
+    <string name="player_turn_label">%s turn</string>
+    <string name="ok_label">OK</string>
+    <string name="shoot_label">Shoot, %s!</string>
+    <string name="miss_label">Miss :(</string>
+
+    <!-- Victory -->
+    <string name="win_label">%s was victorious!</string>
+    <string name="congratulations_label">Congratulations!</string>
+</resources>

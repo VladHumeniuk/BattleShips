@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/player_label"
+        style="@style/DefaultText"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/title_text_size"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/player_label"
+        android:stretchMode="columnWidth"
+        android:numColumns="@integer/table_size"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_end_turn"
+        style="@style/DefaultButton"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="4dp"
+        android:visibility="invisible"
+        android:text="@string/end_turn_label"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ship_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_end_turn"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_ship_4"
+            style="@style/DefaultText"
+            android:padding="4dp"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_ship_3"
+            style="@style/DefaultText"
+            android:padding="4dp"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_ship_2"
+            style="@style/DefaultText"
+            android:padding="4dp"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label_ship_1"
+            style="@style/DefaultText"
+            android:padding="4dp"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/DefaultText"
+        android:text="@string/opponents_ships_label"
+        app:layout_constraintBottom_toTopOf="@id/ship_buttons_container"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sub_title_text_size"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+
+</android.support.constraint.ConstraintLayout>
